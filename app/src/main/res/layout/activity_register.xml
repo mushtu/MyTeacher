@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.stepstone.stepper.StepperLayout
+            android:id="@+id/stepper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ms_backButtonColor="@color/accent_bright"
+            app:ms_backButtonText="قبلی"
+            app:ms_completeButtonColor="@color/accent_bright"
+            app:ms_completeButtonText="پایان"
+            app:ms_nextButtonColor="@color/accent_bright"
+            app:ms_nextButtonText="بعدی"
+            app:ms_stepperType="tabs" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

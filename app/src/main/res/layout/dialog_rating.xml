@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/chk_one_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:text="وقت شناس"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chk_smart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:text="باهوش"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk_one_time" />
+
+        <CheckBox
+            android:id="@+id/chk_kindly"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:text="مهربان"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk_smart" />
+
+        <CheckBox
+            android:id="@+id/chk_irregular"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:text="نامنظم"
+            app:layout_constraintRight_toLeftOf="@+id/chk_one_time"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chk_unkindly"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="بداخلاق"
+            android:layoutDirection="rtl"
+            app:layout_constraintRight_toLeftOf="@+id/chk_smart"
+            app:layout_constraintTop_toBottomOf="@+id/chk_irregular" />
+
+        <CheckBox
+            android:id="@+id/chk_adame_tasalot"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            android:text="عدم تسلط به مطالب"
+            app:layout_constraintRight_toLeftOf="@+id/chk_kindly"
+            app:layout_constraintTop_toBottomOf="@+id/chk_unkindly" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
